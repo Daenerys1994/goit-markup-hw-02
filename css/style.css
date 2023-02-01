@@ -18,16 +18,17 @@ html {
     --btn-bg-color-activ: #404BBF;
     --btn-text-color: #4D5AE5;
     --btn-text-color-activ: #fff;
+    --footer-text-color: #e7e9fc; 
  
 }
 
 /* -----------------------------------------BODY */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    color: var(--main-text-color);
     font-weight: 400;
     font-size: 16px;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     margin: 0;
     min-width: 1440px;
 }
@@ -69,7 +70,7 @@ button
    padding-right: 156px;
    margin: 0 auto;
    background-color: var(--main-bg-color);
-   border-bottom: 1px solid #E7E9FC;
+   border-bottom: 1px solid var(--footer-text-color);
 }
 
 .header-navigation {
@@ -87,7 +88,7 @@ button
    font-size: 18px;
    line-height: 24px;
    top: 24px;
-   color: #2E2F42;
+   color: var(--main-text-color);
    text-decoration: none;
    display: flex;
    align-items: center;
@@ -98,7 +99,7 @@ button
    font-weight: 800;
    font-size: 18px;
    line-height: 24px;
-   color: #4D5AE5;
+   color: var(--btn-text-color);
 }
 
 .header-list {
@@ -111,14 +112,14 @@ button
 }
 
 .header-item{
-    color: #2E2F42;
+    color: var(--main-text-color);
     
 
 }
 .nav-link {
     font-size: 16px;
     line-height: 24px;
-    color: #434455;
+    color: var(--second-text-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
@@ -137,7 +138,7 @@ button
 .header-address-link {
     display: flex;
     align-items: center;
-    color: #434455;
+    color: var(--second-text-color);
     text-decoration: none;
 }
 
@@ -164,7 +165,7 @@ button
     align-items: center;
     justify-content: center;
     margin-bottom: 120px;
-    background: #2E2F42;
+    background: var(--main-text-color);
    
 
 }
@@ -173,7 +174,7 @@ button
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--main-bg-color);
     max-width: 500px;
     margin-top: 0;
     margin-bottom: 48px;
@@ -182,12 +183,12 @@ button
 
 .order-service { 
    display: flex;
-    background: #4D5AE5;
+    background: var(--btn-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--btn-text-color-activ);
 
     
     
@@ -237,7 +238,7 @@ button
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #434455;
+    color: var(--second-text-color);
     margin: 0;
 }
 
@@ -260,12 +261,12 @@ button
 }
 /* TEAM */
 .main-team {
-    background: #F4F4FD;
+    background: var(--second-bg-color);
     padding: 120px 0;
 
 }
 .title-section{
-    color: #2E2F42;
+    color: var(--main-text-color);
     font-weight: 700;
     text-align: center;
    
@@ -279,7 +280,7 @@ button
 }
 .main-team-item{
     text-align: center;
-    background: #FFFFFF;
+    background: var(--main-bg-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 32px;
@@ -289,6 +290,7 @@ button
     text-align: center;
     letter-spacing: 0.02em;
     margin: 32px 0 8px;
+    color: var(--main-text-color);
 
 }
 .team-prof{
@@ -298,7 +300,7 @@ button
 
 /* -----------------------------------------FOOTER */
 .footer-background{
-    background: #2E2F42;
+    background: var(--main-text-color);
     padding: 100px 156px 100px;
 }
 .logo-footer{
@@ -308,7 +310,7 @@ button
    font-size: 18px;
    line-height: 24px;
    text-decoration: none;
-   color: #F4F4FD;
+   color: var(--btn-bg-color);
    margin-bottom: 16px;
 }
 
@@ -316,7 +318,7 @@ button
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--footer-text-color);
     max-width: 264px;
     margin: 0;
     
@@ -348,7 +350,7 @@ button
     color: var(--btn-text-color);
     padding: 12px 24px;
     background-color: var(--btn-bg-color);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--footer-text-color);
     border-radius: 4px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -373,8 +375,8 @@ button
 }
 .picture-item{
     /* text-align: center; */
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
+    background: var(--main-bg-color);
+    border: 1px solid var(--footer-text-color);
     
 
 }
@@ -383,6 +385,7 @@ button
     letter-spacing: 0.02em;
     padding-left: 16px;
     margin: 32px 0 8px 0;
+    color: var(--main-text-color);
     
 
     
@@ -391,5 +394,5 @@ button
     margin: 0  ;
     padding: 0 0 32px 16px;
     letter-spacing: 0.02em;
-
-}
+    color: var(--second-text-color);
+}  
